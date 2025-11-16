@@ -17,7 +17,7 @@ public class Funcoes_Menus {
 
         do {
 
-            System.out.println("\n\n-*-*-*-*-*- MENU LOGIN -*-*-*-*-*-");
+            System.out.println("\n\n-*-*-*-*-*- \uD83D\uDCBB MENU LOGIN \uD83D\uDCBB-*-*-*-*-*-");
             System.out.println("1. ADMINISTRADOR");
             System.out.println("2. CLIENTE");
             System.out.println("0. SAIR");
@@ -29,10 +29,10 @@ public class Funcoes_Menus {
 
                 case 1: // Administrador
 
-                    System.out.print("\n Indique o seu username: ");
+                    System.out.print("\n\uD83D\uDC64 Indique o seu username: ");
                     user = input.next();
 
-                    System.out.print("Indique a sua password: ");
+                    System.out.print("\uD83D\uDD11Indique a sua password: ");
                     password = input.next();
 
                     if (user.equals("admin") && password.equals("code")) {
@@ -144,7 +144,6 @@ public class Funcoes_Menus {
 
                 case 0: // SAIR
                     System.out.println("\n \uD83D\uDD19 Obrigado! CodeSavana espera por si! \uD83D\uDD19");
-                    funcaoCopyright();
                     break;
 
                 default:
@@ -166,12 +165,11 @@ public class Funcoes_Menus {
 
         do {
 
-            System.out.println("\n\n-*-*-*-*-*- MENU LOGIN -*-*-*-*-*-");
+            System.out.println("\n\n-*-*-*-*-*- MENU CLIENTE -*-*-*-*-*-");
             System.out.println("1. Ver catálogo de animais por habitat");
             System.out.println("2. Ver atividades de um animal");
             System.out.println("3. Simular apadrinhamento de um animal");
-            System.out.println("4. Encontrar 'amigos de zoo'");
-            System.out.println("5. Jogo: adivinha a espécie");
+            System.out.println("4. Jogo: adivinha a espécie");
             System.out.println("0. SAIR");
 
             System.out.print("Selecione a opção pretendia: ");
@@ -197,7 +195,6 @@ public class Funcoes_Menus {
 
                 case 0: // SAIR
                     System.out.println("\n \uD83D\uDD19 Obrigado! CodeSavana espera por si! \uD83D\uDD19");
-                    funcaoCopyright();
                     break;
 
                 default:
@@ -207,11 +204,6 @@ public class Funcoes_Menus {
 
         } while (opcao != 0);
     }
-
-
-
-
-
 
 
 }

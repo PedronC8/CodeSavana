@@ -204,7 +204,7 @@ public class Funcionalidades {
 
 
 
-        System.out.println("***** APRESENTAMOS O ANIMAL MAIS POPULAR DA NOSSA CODESAVANA ***** ");
+        System.out.println("***** \uD83D\uDC35APRESENTAMOS O ANIMAL MAIS POPULAR DA NOSSA CODESAVANA\uD83D\uDC35 ***** ");
         System.out.println("Nome: " + Nome);
         System.out.println("Especie: " + Especie);
         System.out.println("Habitat: " + Habitat);
