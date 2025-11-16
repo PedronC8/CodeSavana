@@ -46,11 +46,12 @@ public class Funcoes_Menus {
 
 
                 case 2: // CLIENTE
-                    clienteMenu();
+                    clienteMenu(matrizAnimais);
                     break;
 
                 case 0: // SAIR
                     System.out.println("\n \uD83D\uDC4B Obrigado! CodeSavana espera por si! \uD83D\uDC4B ");
+                    funcaoCopyright();
                     break;
 
                 default:
@@ -113,6 +114,7 @@ public class Funcoes_Menus {
                     break;
 
                 case 4: // Animal mais popular
+                    animalMaisPopular(matrizInteracoes,matrizAnimais);
 
                     break;
 
@@ -121,11 +123,15 @@ public class Funcoes_Menus {
                     break;
 
                 case 6: // Listar padrinhos de um animal
+                    Scanner input2 = new Scanner(System.in);
+                    System.out.println("Digite o id do animal para conhecer os seus padrinhos: ");
+                    String idAnimal = input2.nextLine();
 
+                    padrinhosDeAnimais(matrizAnimais, matrizInteracoes, matrizClientes, idAnimal);
                     break;
 
                 case 7: // Espetáculo mais rentável
-
+                    espetaculoMaisRentavel(matrizInteracoes, matrizAnimais);
                     break;
 
                 case 8: // Ranking de animais em perigo de extinção
@@ -133,11 +139,12 @@ public class Funcoes_Menus {
                     break;
 
                 case 9: // Estatísticas por habitat
-
+                    estatisticasPorHabitat(matrizAnimais,matrizInteracoes);
                     break;
 
                 case 0: // SAIR
                     System.out.println("\n \uD83D\uDD19 Obrigado! CodeSavana espera por si! \uD83D\uDD19");
+                    funcaoCopyright();
                     break;
 
                 default:
@@ -151,10 +158,7 @@ public class Funcoes_Menus {
 
 
 
-
-
-
-    public static void clienteMenu() {
+    public static void clienteMenu(String [][] matrizAnimais) {
 
         Scanner input = new Scanner(System.in);
 
@@ -176,7 +180,7 @@ public class Funcoes_Menus {
             switch (opcao) {
 
                 case 1: // Ver catálogo de animais por habitat
-
+                catalogoDeAnimaisPorHabitat(matrizAnimais);
                     break;
 
 
@@ -184,16 +188,16 @@ public class Funcoes_Menus {
                     break;
 
                 case 3: // Simular apadrinhamento de um animal
+                    apadrinhamentoNovo(matrizAnimais);
                     break;
 
-                case 4: // Encontrar 'amigos de zoo'
-                    break;
-
-                case 5: // Jogo: adivinha a espécie
+                case 4: // Jogo: adivinha a espécie
+                    jogoAdivinhar(matrizAnimais);
                     break;
 
                 case 0: // SAIR
                     System.out.println("\n \uD83D\uDD19 Obrigado! CodeSavana espera por si! \uD83D\uDD19");
+                    funcaoCopyright();
                     break;
 
                 default:
